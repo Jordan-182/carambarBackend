@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx src/server.ts",
+    "build": "echo 'No build step needed for this project'",
+    "start": "tsx src/server.ts",
     "db:seed": "tsx src/scripts/seed.ts"
   },
   "keywords": [],
