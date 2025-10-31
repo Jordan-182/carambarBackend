@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx src/server.ts",
-    "build": "tsx src/scripts/seed.ts",
+    "build": "echo 'Build complete - seeding will happen automatically on start'",
     "start": "tsx src/server.ts",
     "db:seed": "tsx src/scripts/seed.ts"
   },
