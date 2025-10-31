@@ -16,7 +16,9 @@ async function seedDatabase() {
     console.log("✅ Connexion à la base de données réussie");
 
     // force:true is used to fully drop tables before recreating them, set it to false to avoid this
-    await sequelize.sync({ force: true });
+    // En production, on ne force pas la recréation des tables pour éviter de perdre des données
+    const force = process.env.NODE_ENV !== "production";
+    await sequelize.sync({ force });
     console.log("✅ Tables synchronisées");
 
     const jokesPath = join(__dirname, "../data/jokes.json");

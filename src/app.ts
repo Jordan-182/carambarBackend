@@ -17,8 +17,8 @@ app.get("/", (req, res) => {
     message: "API Carambar - CDA Project",
     version: "1.0.0",
     endpoints: {
-      jokes: "/api/jokes",
-      randomJoke: "/api/jokes/random",
+      jokes: "/api/blagues",
+      randomJoke: "/api/blagues/random",
       swagger: "/api-docs",
     },
   });
