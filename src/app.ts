@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// API Routes
+// Doc
 app.get("/", (req, res) => {
   res.json({
     message: "API Carambar - CDA Project",
@@ -30,12 +30,12 @@ app.use(
   swaggerUi.serve,
   swaggerUi.setup(swaggerSpec, {
     customCss: ".swagger-ui .topbar { display: none }",
-    customSiteTitle: "🎭 API Carambar - Documentation",
+    customSiteTitle: "API Carambar - Documentation",
   })
 );
 
 // API Routes
-app.use("/api/jokes", jokeRoutes);
+app.use("/api/blagues", jokeRoutes);
 
 // Error handling middleware
 app.use(errorHandler);

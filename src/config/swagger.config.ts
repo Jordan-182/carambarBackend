@@ -4,7 +4,7 @@ const options: swaggerJsdoc.Options = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "🎭 API Carambar",
+      title: "API Carambar",
       version: "1.0.0",
       description: "API Carambar - Projet CDA",
     },
@@ -16,7 +16,7 @@ const options: swaggerJsdoc.Options = {
     ],
     tags: [
       {
-        name: "Jokes",
+        name: "Blagues",
         description: "Gestion des blagues Carambar",
       },
     ],
